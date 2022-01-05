@@ -25,7 +25,7 @@
 
 # Now add the path of airflow
 
-    echo 'PATH=$PATH:/home/malam/.local/bin'>>~/.bashrc
+    echo 'PATH=$PATH:$HOME/.local/bin'>>~/.bashrc
 
 # source the .bashrc to reflect PATH variable in current session and it will be releflected automatically in next session.
 
