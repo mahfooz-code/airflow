@@ -10,7 +10,7 @@
 
     mkdir -p ./dags ./logs ./plugins
 
-    /dags - you can put your DAG files here.
+    ./dags - you can put your DAG files here.
 
     ./logs - contains logs from task execution and scheduler.
 
