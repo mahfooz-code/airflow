@@ -1,7 +1,9 @@
 # webserver
 
-Visualizes the DAGs parsed by the scheduler and provides the main interface for users to monitor DAG runs 
-and their results.
+1. Visualizes the DAGs parsed by the scheduler
+2. Provides the main interface for users to monitor DAG runs 
+and their results
+3. 
 
 #   starting web server
     

@@ -2,18 +2,15 @@
 
     docker run --rm "debian:buster-slim" bash -c 'numfmt --to iec $(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE))))'
 
-# Downlaoding docker compose file created by airflow
+# Downloading docker compose file created by airflow
     
     curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.2.3/docker-compose.yaml'
 
 # mounting the folder
 
     mkdir -p ./dags ./logs ./plugins
-
     ./dags - you can put your DAG files here.
-
     ./logs - contains logs from task execution and scheduler.
-
     ./plugins - you can put your custom plugins here.
 
 
@@ -63,13 +60,9 @@
 
 
     _AIRFLOW_WWW_USER_USERNAME
-
     _AIRFLOW_WWW_USER_PASSWORD
-
     _PIP_ADDITIONAL_REQUIREMENTS
-
     AIRFLOW_IMAGE_NAME
-
     AIRFLOW_UID
 
 

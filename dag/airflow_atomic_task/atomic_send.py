@@ -7,7 +7,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 
 dag = DAG(
-    dag_id="partitioning_data_dag",
+    dag_id="atomic_send",
     schedule_interval="@daily",
     start_date=dt.datetime(year=2019, month=1, day=1),
     end_date=dt.datetime(year=2019, month=1, day=5),
