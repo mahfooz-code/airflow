@@ -38,9 +38,9 @@ def _clean_sales_new(**context):
 
 
 with DAG(
-    dag_id="branch_task",
-    start_date=airflow.utils.dates.days_ago(3),
-    schedule_interval="@daily",
+        dag_id="branch_function",
+        start_date=airflow.utils.dates.days_ago(3),
+        schedule_interval="@daily",
 ) as dag:
     start = DummyOperator(task_id="start")
 

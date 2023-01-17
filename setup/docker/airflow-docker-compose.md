@@ -58,7 +58,6 @@
 
 # Environment variables supported by Docker Compose
 
-
     _AIRFLOW_WWW_USER_USERNAME
     _AIRFLOW_WWW_USER_PASSWORD
     _PIP_ADDITIONAL_REQUIREMENTS

@@ -1,4 +1,8 @@
-Sensors are special types of operators whose purpose is to wait on some external or internal trigger. These are commonly used to trigger some or all of the DAG, based on the occurrence of some external event. Some common types of sensors are:
+Sensors are special types of operators whose purpose is to wait on some external or internal trigger. 
+
+These are commonly used to trigger some or all of the DAG, based on the occurrence of some external event. 
+
+Some common types of sensors are:
 
 
 1. ExternalTaskSensor waits on another task (in a different DAG) to complete execution.
