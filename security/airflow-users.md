@@ -1,4 +1,5 @@
-# creating user to access dag webserver ui    
+# creating user to access dag web server ui
+
     airflow users create \
         --username admin \
         --firstname Mahfooz \
@@ -6,5 +7,4 @@
         --role Admin \
         --email mahfooz.iiitian@gmail.com
 
-
-# accessing internet using proxy sever
+## accessing internet using proxy sever

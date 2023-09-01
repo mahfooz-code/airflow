@@ -5,4 +5,3 @@
     curl -X GET  \
         --user "airflow:airflow" \
         "${ENDPOINT_URL}/api/v1/pools"
-

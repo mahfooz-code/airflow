@@ -18,3 +18,6 @@ print_context = PythonOperator(
     python_callable=_print_context,
     dag=dag,
 )
+
+if __name__ == "__main__":
+    dag.test()

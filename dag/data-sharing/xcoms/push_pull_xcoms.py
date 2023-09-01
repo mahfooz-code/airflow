@@ -20,9 +20,9 @@ def _deploy_model(**context):
 
 
 with DAG(
-        dag_id="push_pull_xcoms",
-        start_date=airflow.utils.dates.days_ago(3),
-        schedule_interval="@daily",
+    dag_id="push_pull_xcoms",
+    start_date=airflow.utils.dates.days_ago(3),
+    schedule_interval="@daily",
 ) as dag:
     start = DummyOperator(task_id="start")
 
@@ -35,7 +35,6 @@ with DAG(
     join_datasets = DummyOperator(task_id="join_datasets")
 
     train_model = PythonOperator(task_id="train_model", python_callable=_train_model)
-
     deploy_model = PythonOperator(task_id="deploy_model", python_callable=_deploy_model)
 
     start >> [fetch_sales, fetch_weather]
@@ -43,5 +42,3 @@ with DAG(
     fetch_weather >> clean_weather
     [clean_sales, clean_weather] >> join_datasets
     join_datasets >> train_model >> deploy_model
-
-    

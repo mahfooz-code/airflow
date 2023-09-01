@@ -5,9 +5,9 @@ from airflow.operators.dummy import DummyOperator
 
 
 with DAG(
-        dag_id="01_start",
-        start_date=airflow.utils.dates.days_ago(3),
-        schedule_interval="@daily",
+    dag_id="01_start",
+    start_date=airflow.utils.dates.days_ago(3),
+    schedule_interval="@daily",
 ) as dag:
     start = DummyOperator(task_id="start")
 

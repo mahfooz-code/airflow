@@ -16,9 +16,9 @@ def _pick_erp_system(**context):
 
 
 with DAG(
-        dag_id="condition_dag_op",
-        start_date=airflow.utils.dates.days_ago(3),
-        schedule_interval="@daily",
+    dag_id="condition_dag_op",
+    start_date=airflow.utils.dates.days_ago(3),
+    schedule_interval="@daily",
 ) as dag:
     start = DummyOperator(task_id="start")
 

@@ -1,7 +1,7 @@
 import airflow
 
 from airflow import DAG
-from airflow.operators.dummy import DummyOperator
+from airflow.operators import DummyOperator
 from airflow.operators.python import PythonOperator, BranchPythonOperator
 
 ERP_CHANGE_DATE = airflow.utils.dates.days_ago(1)
@@ -31,9 +31,9 @@ def _clean_sales_new(**context):
 
 
 with DAG(
-        dag_id="03_branch_dag",
-        start_date=airflow.utils.dates.days_ago(3),
-        schedule_interval="@daily",
+    dag_id="03_branch_dag",
+    start_date=airflow.utils.dates.days_ago(3),
+    schedule_interval="@daily",
 ) as dag:
     start = DummyOperator(task_id="start")
 
